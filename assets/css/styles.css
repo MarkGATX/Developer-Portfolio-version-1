@@ -46,12 +46,21 @@ header h1 {
     padding: 20px 20px 20px 75px;
     background-color: var(--light_main);
     color: var(--dark_main);
+    text-align:right;
+    transition:all .3s;
+}
+
+nav ul {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    transition:all .3s;
 }
 
 nav ul li {
     color: var(--light_main);
     display: inline;
-    margin: 15px;
+    margin: 10px;
     font-size: 1rem;
     font-weight: bold;
     background: linear-gradient(to bottom,
@@ -154,6 +163,8 @@ p {
     position: relative;
     left: -1px;
     background-color: var(--light_main);
+    transition:all .3s;
+
 }
 
 .project_title p {
@@ -177,12 +188,14 @@ p {
     justify-content: space-around;
     align-items: baseline;
     margin: 0;
+    flex-wrap:wrap;
+    transition:all .3s;
 }
 
 .section_content ul li {
     color: var(--dark_main);
     display: inline;
-    margin: 0 15px;
+    margin:15px;
     font-size: 1rem;
     font-weight: bold;
     background: linear-gradient(to bottom,
@@ -225,12 +238,6 @@ p {
     height: 400px;
 }
 
-/* main:last-child section .section_content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} */
-
 
 /* Media Queries */
 @media screen and (max-width: 768px){
@@ -249,9 +256,15 @@ p {
     .project {
         width:100%;
     }
-    
+    .section_content ul li {
+        margin:5px;
+        
+    }
 }
 
 @media screen and (max-width: 992px) {
-
+    .hero {
+        padding: 20px 0 30px 30px;
+    }
+   
 }
