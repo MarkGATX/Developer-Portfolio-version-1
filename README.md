@@ -45,6 +45,9 @@ The original visual concept of the page was created by staff of the UT Austin Fu
 
 The animating background on the navbar and Contact Me section was inspired by [Geoff Graham on CSS Tricks](https://css-tricks.com/having-fun-with-link-hover-effects/).
 
+Background for the Github image is a composite of a personal photo and Photo by [Adi Goldstein](https://unsplash.com/@adigold1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/technology?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  
+
 
 
 ___
