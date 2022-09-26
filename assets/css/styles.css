@@ -128,8 +128,10 @@ p {
     justify-content: flex-end;
     align-items: center;
     height: 100px;
-    background-color: var(--light_main);
+    /* background-color: var(--light_main); */
     padding: 20px 30px 30px 30px;
+    background-image:url(../images/hero_bg_h_200px.jpg);
+    background-size: cover;
 }
 
 .hero p {
