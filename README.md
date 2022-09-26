@@ -47,7 +47,7 @@ The animating background on the navbar and Contact Me section was inspired by [G
 
 Background for the Github image is a composite of a personal photo and Photo by [Adi Goldstein](https://unsplash.com/@adigold1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/technology?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
   
-
+Background image in hero section from Steve Johnson at [Pexels.](https://www.pexels.com/photo/multicolored-lighted-device-1044990/)
 
 
 ___
