@@ -96,6 +96,7 @@ p {
     background-image: url(../images/constellation\ background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .git_bg {
@@ -108,12 +109,14 @@ p {
     background-image: url(../images/foodie_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position:center;
 }
 
 .musing_bg {
     background-image: url(../images/musing_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position:top;
 }
 
 .hoa_bg {
@@ -130,7 +133,7 @@ p {
     height: 100px;
     /* background-color: var(--light_main); */
     padding: 20px 30px 30px 30px;
-    background-image:url(../images/hero_bg_h_200px.jpg);
+    background-image:linear-gradient(var(--dark_main) 10%,transparent 90%), url(../images/hero_bg_h_200px.jpg);
     background-size: cover;
 }
 
