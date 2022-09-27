@@ -2,6 +2,11 @@
 
 ## Develop a Starter Portfolio page 
 
+
+___
+
+
+
 Developing a good portfolio will be vital to show people where my coding skills are, were, and will be. So the second module challenge for the Bootcamp is to create a beginning portfolio page using Advanced CSS techniques that we learned in class.
 
 The inspiration for the overall layout and design is from the Challenge Assignment, which was to replicate the given page and functionality as close as possible. To that end, most of the design decisions come directly from the team at the UT-Austin Bootcamp and were replicated in form and function, with some small tweaks here and there. 
