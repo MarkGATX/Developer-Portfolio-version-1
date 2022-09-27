@@ -10,7 +10,7 @@
 
 /* Global */
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
 /* Elements */
@@ -19,7 +19,7 @@ a {
     color: inherit;
 }
 
-
+/* Set text headers */
 h1 {
     font-size: 2.2rem;
 }
@@ -33,7 +33,7 @@ h2 {
 h3 {
     margin: 5px;
 }
-
+/* set header and nav bar content */
 header {
     display: flex;
     flex-direction: row;
@@ -42,7 +42,7 @@ header {
     align-items: center;
     background-color: var(--dark_main);
 }
-
+/* width 22% is closest match to section titles farther down page */
 header h1 {
     padding: 20px 20px 20px 75px;
     background-color: var(--light_main);
@@ -58,7 +58,7 @@ nav ul {
     justify-content:flex-end;
     transition:all .3s;
 }
-
+/* Background set to animate on hover */
 nav ul li {
     color: var(--light_main);
     display: inline;
@@ -74,17 +74,17 @@ nav ul li {
     padding: 5px;
     transition: all .3s;
 }
-
+/* Set color to inherit to match the section it's in at nav bar and contact area */
 nav ul li a,
 .section_content ul li a {
     color: inherit;
 }
-
+/* set nav link hover animation */
 nav ul li:hover {
     background-size: 4px 50px;
     color: var(--dark_main);
 }
-
+/* set to space out text */
 p {
     margin: 10px;
 }
@@ -92,6 +92,7 @@ p {
 
 
 /* Classes */
+/* background images for each of the work sections. Did not consolidate class since each background image hs different position */
 .constell_bg {
     background-image: url(../images/constellation\ background.jpg);
     background-size: cover;
@@ -124,7 +125,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+/* background for Hero section with catch phrase below header. 2 layered backgrounds. */
 .hero {
     display: flex;
     flex-direction: row;
@@ -135,6 +136,7 @@ p {
     padding: 20px 30px 30px 30px;
     background-image:linear-gradient(var(--dark_main) 10%,transparent 90%), url(../images/hero_bg_h_200px.jpg);
     background-size: cover;
+    transition:all .3s;
 }
 
 .hero p {
@@ -144,13 +146,13 @@ p {
     font-size: 1.7em;
     margin: 0;
 }
-
+/* Pushes 2nd <p> down to offset and make it more interesting to look at. */
 .hero p:nth-child(2) {
     align-self: flex-end;
     margin: 0 45px 0 0;
 }
 
-
+/* styling for large images of projects */
 .project {
     display: flex;
     justify-content: flex-start;
@@ -163,7 +165,7 @@ p {
     opacity: .8;
     transition: all .3s;
 }
-
+/* smaller text box on larger project images. Left position removes 1px black border between title and border */
 .project_title {
     margin-bottom: 25px;
     padding: 5px;
@@ -178,7 +180,7 @@ p {
     margin: 5px;
     font-size: .7rem;
 }
-
+/* defines all of the sections as one flex box for wrapping and sizing */
 .section_content {
     display: flex;
     flex-direction: row;
@@ -189,7 +191,7 @@ p {
     align-items: center;
     margin:10px 0;
 }
-
+/* styles the ul for links in the Contact Me section */
 .section_content ul {
     width: 100%;
     display: flex;
@@ -220,39 +222,39 @@ p {
     color: var(--light_main);
     background-size: 4px 50px;
 }
-
+/* Styling for avatar in the About Me section */
 .section_content img {
     width:30%;
     float:left;
     margin:0 20px 20px 0;
     transition:all .3s;
 }
-
+/* Styling for title for each section: About Me, Work, and Contact Me */
 .section_title {
     width: 25%;
     border-right: 5px solid var(--dark_main);
     color: var(--dark_main);
     padding-right: 10px;
 }
-
-.topic {
+/* Sets each topic as it's own flex box */
+.topic { 
     margin: 60px 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
+/* changes the opacity of the bg image in the work section */
 .project:hover {
     opacity: 1;
 }
 
 /* IDs */
-
+/* Makes the first item in the work section larger than the others in the flex box */
 #work .topic article.section_content a:first-child {
     width: 100%;
     height: 400px;
 }
-
+/* wraps text around avatar image in About me section */
 #about_me .section_content {
     display:block;
 }
@@ -262,9 +264,9 @@ p {
 }
 
 
-
 /* Media Queries */
 @media screen and (max-width: 768px){
+    /* move nav bar to below Name */
     header {
         flex-direction:column;
         align-items: center;
@@ -277,6 +279,7 @@ p {
         text-align:center;
         margin-bottom: 10px;
     }
+    /* set all projects to full width. Keep first at larger height */
     .project {
         width:100%;
     }
@@ -289,12 +292,18 @@ p {
     h2 {
         font-size:1.8rem;
     }
-}
+    /* Shift the catch phrase to center from end */
+    .hero {
+        justify-content: center;
+    }
+
 
 @media screen and (max-width: 992px) {
+    /* adjust padding to line up content */
     .hero {
         padding: 20px 0 30px 30px;
     }
+    /* Adjust size of avatar to keep it from looking too small at smaller resolutions */
     .section_content img {
         width:50%;
     }
