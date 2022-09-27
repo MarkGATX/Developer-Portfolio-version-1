@@ -5,6 +5,7 @@
     --light_accent: #b49594;
     --dark_accent: #4a051c;
     --highlight: #8f6593;
+    --light_background: #eff6ff;
 
 }
 
@@ -19,9 +20,13 @@ a {
     color: inherit;
 }
 
+body {
+    background-color:var(--light_background);
+}
+
 /* Set text headers */
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
 
 h2 {
@@ -240,6 +245,7 @@ p {
 /* changes the opacity of the bg image in the work section */
 .project:hover {
     opacity: 1;
+    border-color: var(--dark_main);
 }
 
 /* IDs */
