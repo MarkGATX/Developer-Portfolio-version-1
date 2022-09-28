@@ -139,7 +139,7 @@ p {
     height: 100px;
     /* background-color: var(--light_main); */
     padding: 20px 30px 30px 30px;
-    background-image:linear-gradient(var(--dark_main) 10%,transparent 90%), url(../images/hero_bg_h_200px.jpg);
+    background-image:url(../images/hero_bg_h_200px.jpg);
     background-size: cover;
     transition:all .3s;
 }
