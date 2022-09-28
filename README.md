@@ -27,6 +27,8 @@ Since my previous work was in digital video production, I decided to go ahead an
 
 The brief for the assignment included a punchy tagline in the hero section. I had been wanting to design a shirt with the short two sentence tagline "Forged by Geekdom. Fueled by Coffee." since one of our community members suggested it for t-shirts a few years ago. It seemed fitting here so I decided to adapt it for this project. I did want to add a little character to it so I used Flexbox justifications and alignments to offset the headers and create the stacking box effect. That took some time to make consistent at all the responsive sizes.
 
+For the image directly underneath the header section, I didn't like the look for just the plain image but I wanted a pop of color against the relatively simple color palette. So to help unify the look I layered a transparent gradient over the image so that the two worked together seamlessly. In the same vein, the pure white background felt too harsh, so I added a slight blue tint to the light background to soften the overall effect. That's also contained in a variable so the entire color scheme can be changed with just a few code switches.
+
 I also took the time to add `transition` attributes to most the elements that would change in order to smooth the transitions from smaller to larger sizes, and vice-versa.
 
 
