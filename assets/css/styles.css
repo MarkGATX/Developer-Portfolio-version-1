@@ -130,6 +130,13 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.playdate_bg {
+    background-image: url(../images/Play_Date_porfolio_shot_v1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* background for Hero section with catch phrase below header. 2 layered backgrounds. */
 .hero {
     display: flex;
