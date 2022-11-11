@@ -137,6 +137,17 @@ p {
     background-repeat: no-repeat;
 }
 
+.garden2_bg {
+    background-image: url(../images/plant\ placeholder.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+}
+.garden2_bg img {
+    width:100%;
+}
+
 /* background for Hero section with catch phrase below header. 2 layered backgrounds. */
 .hero {
     display: flex;
