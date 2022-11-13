@@ -11,6 +11,8 @@ Developing a good portfolio will be vital to show people where my coding skills 
 
 The inspiration for the overall layout and design is from the Challenge Assignment, which was to replicate the given page and functionality as close as possible. To that end, most of the design decisions come directly from the team at the UT-Austin Bootcamp and were replicated in form and function, with some small tweaks here and there. 
 
+[See the portfolio live here.](https://markgatx.github.io/Developer-Portfolio-version-1/)
+
 ![Screenshot of Portfolio Page](./assets/images/Advanced%20CSS%20Portfolio%20screenshot.jpg)
 
 
