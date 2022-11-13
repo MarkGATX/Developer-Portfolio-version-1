@@ -98,6 +98,17 @@ p {
 
 /* Classes */
 /* background images for each of the work sections. Did not consolidate class since each background image hs different position */
+
+.flare {
+    background-image : linear-gradient(transparent 30%, red 44%, orange 46%, yellow 48%, green 50%, blue 52%, indigo 54%, violet 56%, transparent 70%);
+    height:100%;
+    width:100%;
+    position: relative;
+    top:-500px;
+    transition: all 1.5s;
+    mix-blend-mode: screen;
+}
+
 .constell_bg {
     background-image: url(../images/constellation\ background.jpg);
     background-size: cover;
@@ -138,15 +149,28 @@ p {
 }
 
 .garden2_bg {
-    background-image: url(../images/plant\ placeholder.webp);
-    background-size: cover;
+    background-image: url(../images/foodie_bg.jpg),linear-gradient(0deg, white 33%, black 66%), url(../images/foodie_bg.jpg);
+    background-position: center, 0px 0%, center;
+    background-size: cover, 100% 300%, cover;
+    background-blend-mode: luminosity, multiply;
+    /* background-size: cover; */
     background-repeat: no-repeat;
-    background-position:center;
-    
+    /* background-position:center; */ 
+    overflow:hidden;
+    transition: all .5s;
 }
-.garden2_bg img {
+
+.garden2_bg:hover {
+    /* filter: grayscale(0%); */
+    background-position: center, 0% 70%, center;
+}
+.garden2_bg:hover .flare {
+    transform: translate(0,1000px);
+}
+
+/* .garden2_bg img {
     width:100%;
-}
+} */
 
 /* background for Hero section with catch phrase below header. 2 layered backgrounds. */
 .hero {
@@ -181,12 +205,12 @@ p {
     justify-content: flex-start;
     align-items: flex-end;
     width: 47%;
-    background-color: var(--dark_main);
+    /* background-color: var(--dark_main); */
     height: 200px;
     margin: 10px 0;
     border: 5px solid var(--light_main);
-    opacity: .8;
-    transition: all .3s;
+    /* opacity: .8; */
+    /* transition: all .3s; */
 }
 /* smaller text box on larger project images. Left position removes 1px black border between title and border */
 .project_title {
@@ -262,7 +286,7 @@ p {
 
 /* changes the opacity of the bg image in the work section */
 .project:hover {
-    opacity: 1;
+    /* opacity: 1; */
     border-color: var(--dark_main);
 }
 
